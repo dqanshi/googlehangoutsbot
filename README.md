@@ -1,10 +1,10 @@
 # Commands for STS
 
-The main program's code base should be in one directory.
-The configuration files (config.json and cookie.json) should be in:
+The main program's code base should be in one directory. \n
+The configuration files (config.json and cookie.json) should be in a different directory:
 * `/Users/_usernamehere_/Library/Application Support/hangupsbot`
 
-Process to run the bot program:
+### Process to run the bot program:
 1. `cd /your/path/to/program`
 2. `source hangoutsbot-venv/bin/activate`
 3. `python hangupsbot/hangupsbot.py`
@@ -15,12 +15,12 @@ Process to run the bot program:
 6. Manually initiate conversations with the people you want to STS
 7. Sit back and let the bot take over
 
-Process to stop the bot:
+### Process to stop the bot:
 1. `control + c` will stop the bot from running
 2. type `deactivate` in the same terminal window
 3. (optional) Delete the `cookies.json` file if you want to sign in to a different gmail next time
 
-If you made changes (such as adding more conversation autoreplies):
+### If you made changes (such as adding more conversation autoreplies):
 1. `git add .`
 2. `git commit -m 'your message here'`
 3. `git push`
