@@ -26,6 +26,13 @@ The configuration files (config.json and cookie.json) should be in a different d
 3. `git push`
 
 
+### Running for the first time:
+1. `python3 --version` should be over Python 3.5
+2. `pip3 --version` should be greater than  9.0
+3. `pip3 install -r requirements.txt` in order to install all dependencies
+4. `python3 hangupsbot/hangupsbot.py` and see if it works
+
+
 # Introduction
 
 Hangupsbot is a chat bot designed for working with Google Hangouts.
