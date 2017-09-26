@@ -1,0 +1,72 @@
+{
+  "admins": [
+    "113111459226218923999"
+  ],
+  "autoreplies_enabled": true,
+  "autoreplies": [
+    [
+      [
+        "hi",
+        "hello"
+      ],
+      [
+      "hi there",
+      "hello there",
+      "heya"
+      ]
+    ],
+    [
+      [
+        "how"
+      ],
+      [
+        "good, and you?",
+        "i am doing good. how are you?"
+      ]
+    ],
+    [
+      [
+        "introduce yourself"
+      ],
+      [
+        "My name is Cheryl Carol (52) and I live in Pennsylvania)"
+      ]
+    ],
+    [
+      [
+        "is that clear",
+        "do you understand",
+        "you have no issue",
+        "will not be a problem for you",
+        "Can you handle that",
+        "are you ready",
+        "are we still"
+      ],
+      [
+        "yes",
+        "Yes"
+      ]
+    ]
+  ],
+  "commands_enabled": true,
+  "commands_user": [],
+  "conversations": {
+    "CONV_ID": {
+      "autoreplies_enabled": false,
+      "commands_enabled": false,
+      "silentmode": false
+    }
+  },
+  "link_to_guide": "https://github.com/hangoutsbot/hangoutsbot/wiki/User-Guide",
+  "mentionall": true,
+  "mentionallwhitelist": [],
+  "mentionerrors": true,
+  "mentionquidproquo": false,
+  "plugins": [
+    "botaliases",
+    "default",
+    "subscribe",
+    "autoreply"
+  ],
+  "silentmode": false
+}
