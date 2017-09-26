@@ -1,3 +1,31 @@
+# Commands for STS
+
+The main program's code base should be in one directory.
+The configuration files (config.json and cookie.json) should be in:
+* `/Users/_usernamehere_/Library/Application Support/hangupsbot`
+
+Process to run the bot program:
+1. `cd /your/path/to/program`
+2. `source hangoutsbot-venv/bin/activate`
+3. `python hangupsbot/hangupsbot.py`
+4. (optional) type in your gmail username and password
+* Now the bot program is running, so all messages to the Hangouts you signed in with will be handled by the bot
+
+5. Sign into that same account in a web browser
+6. Manually initiate conversations with the people you want to STS
+7. Sit back and let the bot take over
+
+Process to stop the bot:
+1. `control + c` will stop the bot from running
+2. type `deactivate` in the same terminal window
+3. (optional) Delete the `cookies.json` file if you want to sign in to a different gmail next time
+
+If you made changes (such as adding more conversation autoreplies):
+1. `git add .`
+2. `git commit -m 'your message here'`
+3. `git push`
+
+
 # Introduction
 
 Hangupsbot is a chat bot designed for working with Google Hangouts.
@@ -61,9 +89,9 @@ optional arguments:
 
 Configuration directives can be specified in `config.json`.
 
-Please note that the `config.json` file supplied with the repository is not 
-  supposed to be edited/changed. It is the reference file used by the bot to 
-  create the actual configuration file located elsewhere in the system. To find out 
+Please note that the `config.json` file supplied with the repository is not
+  supposed to be edited/changed. It is the reference file used by the bot to
+  create the actual configuration file located elsewhere in the system. To find out
   where the actual file is, please see the [**Additional Configuration** section](https://github.com/hangoutsbot/hangoutsbot/blob/master/INSTALL.md#additional-configuration)
   in the [installation](https://github.com/hangoutsbot/hangoutsbot/blob/master/INSTALL.md)
   instructions.
@@ -120,11 +148,11 @@ The base bot supports some basic command even without any plugins loaded.
 `/bot version`
 * Bot replies with the version number of the framework
 
-A full list of commands supported by the base framework is available at the 
+A full list of commands supported by the base framework is available at the
   [**Core Commands**](https://github.com/hangoutsbot/hangoutsbot/wiki/Core-Commands)
   wiki page.
 
-The wiki also has a 
+The wiki also has a
   [**list of plugins**](https://github.com/hangoutsbot/hangoutsbot/wiki/Plugin-List)
   detailing available plugins with commands lists and usage.
 
