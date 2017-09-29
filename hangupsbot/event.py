@@ -73,6 +73,7 @@ class ConversationEvent(GenericEvent):
         self.user = self.conv.get_user(self.user_id)
         self.timestamp = conv_event.timestamp
         self.text = conv_event.text.strip() if isinstance(conv_event, hangups.ChatMessageEvent) else ''
+        self.anything_sent = 0
 
         self.log()
 
