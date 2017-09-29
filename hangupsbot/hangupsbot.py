@@ -50,6 +50,7 @@ class HangupsBot(object):
         self._cache_event_id = {} # workaround for duplicate events
 
         self._locales = {}
+        self.keyword_responses = {}
 
         # Load config file
         try:
@@ -298,7 +299,7 @@ class HangupsBot(object):
                 _cached = self.memory.get_by_path(["user_data", chat_id, "_hangups"])
 
                 hangups_user = hangups.user.User(
-                    UserID, 
+                    UserID,
                     _cached["full_name"],
                     _cached["first_name"],
                     _cached["photo_url"],
@@ -587,7 +588,7 @@ class HangupsBot(object):
 
         event = ConversationEvent(self, conv_event)
 
-        yield from self.conversations.update(self._conv_list.get(conv_event.conversation_id), 
+        yield from self.conversations.update(self._conv_list.get(conv_event.conversation_id),
                                              source="event")
 
         if isinstance(conv_event, hangups.ChatMessageEvent):
@@ -975,7 +976,7 @@ def main():
                         help=_('show program\'s version number and exit'))
     args = parser.parse_args()
 
-    
+
 
     # Create all necessary directories.
     for path in [args.log, args.cookies, args.config, args.memory]:
