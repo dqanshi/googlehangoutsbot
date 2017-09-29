@@ -29,8 +29,9 @@ The configuration files (config.json and cookie.json) should be in a different d
 ### Running for the first time:
 1. `python3 --version` should be over Python 3.5
 2. `pip3 --version` should be greater than  9.0
-3. `pip3 install -r requirements.txt` in order to install all dependencies
-4. `python3 hangupsbot/hangupsbot.py` and see if it works
+3. `virtualenv hangoutsbot-venv` to create a virtual environment
+4. `pip3 install -r requirements.txt` in order to install all dependencies
+5. `python3 hangupsbot/hangupsbot.py` and see if it works
 
 
 # Introduction
