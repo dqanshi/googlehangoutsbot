@@ -1,4 +1,5 @@
 import asyncio, re, logging, json, random
+from random import randint
 
 import hangups
 
@@ -83,9 +84,20 @@ def _handle_autoreply(bot, event, command):
             # Extend original list with non-disgarded entries.
             autoreplies_list.extend( add_to_autoreplies )
 
-    if autoreplies_list:
-        for kwds, sentences in autoreplies_list:
+    ## If text contains a key phrase, find it and end all comms with it for the next 4-7 times
+    ending_phrases = ['\"done\"', '\"okay\"']
+    for phrase in ending_phrases:
+        if event.text.lower().find(phrase) != -1:
+            bot.keyword_responses[event.conv_id] = {'keyword':phrase, "counter":randint(5, 8)}
 
+    ## If text contains parenth with numbers in it, handle differently ##
+    if re.findall('\d+.*?\)', event.text) and not re.findall('\d+\w+', event.text):
+        logger.info("Entering Multi-Line answer workflow")
+        message = _multi_number_answer(event.text, autoreplies_list)
+        yield from send_reply(bot, event, message)
+
+    elif autoreplies_list:
+        for kwds, sentences in autoreplies_list:
             if isinstance(sentences, list):
                 message = random.choice(sentences)
             else:
@@ -94,12 +106,18 @@ def _handle_autoreply(bot, event, command):
             if isinstance(kwds, list):
                 for kw in kwds:
                     if _words_in_text(kw, event.text) or kw == "*":
-                        logger.info("matched chat: {}".format(kw))
+                        logger.info("MATCHED CHAT: {}".format(kw))
+                        event.anything_sent = 1
+                        yield from send_reply(bot, event, message)
+                        break
+
+                    elif kw == 'no_match_but_must_reply_with_keyword' and (event.conv_id in bot.keyword_responses) and bot.keyword_responses[event.conv_id]["counter"]>0 and event.anything_sent==0:
+                        bot.keyword_responses[event.conv_id]["counter"] -= 1
                         yield from send_reply(bot, event, message)
                         break
 
             elif event_type == kwds:
-                logger.info("matched event: {}".format(kwds))
+                logger.info("MATCHED EVENT: {}".format(kwds))
                 yield from send_reply(bot, event, message)
 
 
@@ -115,40 +133,49 @@ def send_reply(bot, event, message):
         values["participants_namelist"] = ", ".join([ u.full_name for u in values["participants"] ])
 
     # tldr plugin integration: inject current conversation tldr text into auto-reply
-    if '{tldr}' in message:
-        args = {'conv_id': event.conv_id, 'params': ''}
-        try:
-            values["tldr"] = bot.call_shared("plugin_tldr_shared", bot, args)
-        except KeyError:
-            values["tldr"] = "**[TLDR UNAVAILABLE]**" # prevents exception
-            logger.warning("tldr plugin is not loaded")
-            pass
+    # if '{tldr}' in message:
+    #     args = {'conv_id': event.conv_id, 'params': ''}
+    #     try:
+    #         values["tldr"] = bot.call_shared("plugin_tldr_shared", bot, args)
+    #     except KeyError:
+    #         values["tldr"] = "**[TLDR UNAVAILABLE]**" # prevents exception
+    #         logger.warning("tldr plugin is not loaded")
+    #         pass
 
     envelopes = []
-
-    if message.startswith(("ONE_TO_ONE:", "HOST_ONE_TO_ONE")):
-        message = message[message.index(":")+1:].strip()
-        target_conv = yield from bot.get_1to1(event.user.id_.chat_id)
-        if not target_conv:
-            logger.error("1-to-1 unavailable for {} ({})".format( event.user.full_name,
-                                                                  event.user.id_.chat_id ))
-            return False
-        envelopes.append((target_conv, message.format(**values)))
-
-    elif message.startswith("GUEST_ONE_TO_ONE:"):
-        message = message[message.index(":")+1:].strip()
-        for guest in values["participants"]:
-            target_conv = yield from bot.get_1to1(guest.id_.chat_id)
-            if not target_conv:
-                logger.error("1-to-1 unavailable for {} ({})".format( guest.full_name,
-                                                                      guest.id_.chat_id ))
-                return False
-            values["guest"] = guest # add the guest as extra info
-            envelopes.append((target_conv, message.format(**values)))
-
+    yield from asyncio.sleep(randint(3,10))
+    if (event.conv_id in bot.keyword_responses) and bot.keyword_responses[event.conv_id]["counter"] > 0:
+        keyword = bot.keyword_responses[event.conv_id]["keyword"]
+        envelopes.append((event.conv, message.format(**values) + '\n ' + keyword))
+        bot.keyword_responses[event.conv_id]["counter"] -= 1
     else:
         envelopes.append((event.conv, message.format(**values)))
 
+
+    # if message.startswith(("ONE_TO_ONE:", "HOST_ONE_TO_ONE")):
+    #     message = message[message.index(":")+1:].strip()
+    #     target_conv = yield from bot.get_1to1(event.user.id_.chat_id)
+    #     if not target_conv:
+    #         logger.error("1-to-1 unavailable for {} ({})".format( event.user.full_name,
+    #                                                               event.user.id_.chat_id ))
+    #         return False
+    #     envelopes.append((target_conv, message.format(**values)))
+    #
+    # elif message.startswith("GUEST_ONE_TO_ONE:"):
+    #     message = message[message.index(":")+1:].strip()
+    #     for guest in values["participants"]:
+    #         target_conv = yield from bot.get_1to1(guest.id_.chat_id)
+    #         if not target_conv:
+    #             logger.error("1-to-1 unavailable for {} ({})".format( guest.full_name,
+    #                                                                   guest.id_.chat_id ))
+    #             return False
+    #         values["guest"] = guest # add the guest as extra info
+    #         envelopes.append((target_conv, message.format(**values)))
+    #
+    # else:
+    #
+    #     envelopes.append((event.conv, message.format(**values)))
+    #
     for send in envelopes:
         conv_target, message = send
 
@@ -180,6 +207,54 @@ def _words_in_text(word, text):
 
     return True if re.search(regexword, text, re.IGNORECASE) else False
 
+def _multi_number_answer(text, replies_list):
+    """Handle common practice in scam interviews of asking numbered questions
+    to the candidate.
+
+    For example:
+    1) What type of jobs have you had and How did you get your previous jobs?
+    (2) What were your main responsibilities?
+    ( 3 ) Have you been in the military before? and Are you currently employed?
+    """
+
+    yield from asyncio.sleep(30)
+    text = text.replace('\n', ' ').replace('\r', '')
+    number_list = re.findall('\d+.*?\)', text)
+    question_list = re.split('\d+.*?\)', text)
+    clean_question_list = [ x.replace('(', '').replace(')', '').lstrip('.').lstrip(',').strip() for x in question_list if x]
+    clean_question_list = [x for x in clean_question_list if x]
+
+    answer_list = []
+
+    ## Handle cases where lists are not cleaned properly
+    ## Make the number and question list equal size
+    if len(clean_question_list) != len(number_list):
+        clean_question_list = clean_question_list[:len(number_list)]
+
+    counter = len(number_list)
+
+    while counter>0:
+        for kwds, sentences in replies_list:
+            if isinstance(sentences, list):
+                message = random.choice(sentences)
+            else:
+                message = sentences
+
+            if isinstance(kwds, list):
+                for kw in kwds:
+                    for question in clean_question_list:
+                        if _words_in_text(kw, question):
+                            answer_list.append(number_list[0] + ' ' + message + ' \n ')
+
+                            if clean_question_list:
+                                del clean_question_list[0]
+
+                            if number_list:
+                                del number_list[0]
+
+                        counter -= 1
+
+    return ''.join(answer_list)
 
 def autoreply(bot, event, cmd=None, *args):
     """adds or removes an autoreply.
