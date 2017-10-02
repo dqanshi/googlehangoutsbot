@@ -2,6 +2,7 @@
   "admins": [
     "113111459226218923999"
   ],
+  "bot_user_info": {},
   "autoreplies_enabled": true,
   "autoreplies": [
     [
@@ -17,7 +18,7 @@
     ],
     [
       [
-        "how"
+        "how are you"
       ],
       [
         "good, and you?",
@@ -29,7 +30,7 @@
         "introduce yourself"
       ],
       [
-        "My name is Cheryl Carol (52) and I live in Pennsylvania)"
+        "My name is Cheryl Carol. I am 52 and I live in Pennsylvania. And I am a female woman"
       ]
     ],
     [
@@ -37,14 +38,241 @@
         "is that clear",
         "do you understand",
         "you have no issue",
+        "you have no issues",
         "will not be a problem for you",
-        "Can you handle that",
+        "Can you handle",
         "are you ready",
-        "are we still"
+        "are we still",
+        "I hope this is very well understood?",
+        "your quick response is highly needed okay?",
+        "Let me know if you are interested so we can proceed",
+        "Are you ready to know your stand",
+        "I believe you are",
+        "shall we get started"
       ],
       [
         "yes",
         "Yes"
+      ]
+    ],
+    [
+      [
+        "If you have issue(s) in any of the above, please indicate"
+      ],
+      [
+        "no"
+      ]
+    ],
+    [
+      [
+        "how much per hour are you"
+      ],
+      [
+        "$20"
+      ]
+    ],
+    [
+      [
+        "What type of jobs have you had",
+        "What types of jobs have you had"
+      ],
+      [
+        "In the past I have been a secretary and personal assistant "
+      ]
+    ],
+    [
+      [
+        "How did you get your previous jobs",
+        "How did you get your previous job",
+        "How did you find your previous jobs",
+        "How did you find your previous job"
+      ],
+      [
+        "I apply on Monster.com just like this one "
+      ]
+    ],
+    [
+      [
+        "What were your main responsibilities"
+      ],
+      [
+        "I was responsible for scheduling and communicatons and other clerical duties "
+      ]
+    ],
+    [
+      [
+        "have you been in the military"
+      ],
+      [
+        "no i have not been in military "
+      ]
+    ],
+    [
+      [
+        "Are you currently employed",
+        "do you currently have a job",
+        "do you have a job"
+      ],
+      [
+        "i am unemployed right now "
+      ]
+    ],
+    [
+      [
+        "Do you have an idea on how to use MS excel"
+      ],
+      [
+        "yes I used excel before "
+      ]
+    ],
+    [
+      [
+        "How many years experience"
+      ],
+      [
+        "2 years of experience ",
+        "about 2 years of experience ",
+        "only 1 year of experience ",
+        "4 ",
+        "3 "
+      ]
+    ],
+    [
+      [
+        "what is your clerical speed"
+      ],
+      [
+        "42 "
+      ]
+    ],
+    [
+      [
+        "Are you willing to work flexible or long hours"
+      ],
+      [
+        "i like to work flexible hours "
+      ]
+    ],
+    [
+      [
+        "How many hours do you intend to dedicate to this job"
+      ],
+      [
+        "7 hours a day "
+      ]
+    ],
+    [
+      [
+        "you ever worked from home"
+      ],
+      [
+        "no but I want to work from home "
+      ]
+    ],
+    [
+      [
+        "Do you have a HP laserjet printer",
+        "Do you have PC,Photocopier,printer and scanner",
+        "Do you have a computer and a printer"
+      ],
+      [
+        "I have a computer but I do not have a printer. "
+      ]
+    ],
+    [
+      [
+        "Are you seeking employment in a company of a certain size"
+      ],
+      [
+        "any size company is fine "
+      ]
+    ],
+    [
+      [
+        "Which among the listed positions",
+        "positions currently available",
+        "currently available positions"
+      ],
+      [
+        "i prefer to be a data entry assistant if that can be possible "
+      ]
+    ],
+    [
+      [
+        "How would you like to be Paid"
+      ],
+      [
+        "every 2 weeks by direct deposit if possible "
+      ]
+    ],
+    [
+      [
+        "What Bank Do you"
+      ],
+      [
+        "I've been with WellsFargo for many years ",
+        "my bank is Chase because they have always been my bank "
+      ]
+    ],
+    [
+      [
+        "How long do you intend working for this company",
+        "How long do you expect to remain employed with this company"
+      ],
+      [
+        "hopefully for long time "
+      ]
+    ],
+    [
+      [
+        "What is your highest educational"
+      ],
+      [
+        "i completed a college business certificate last year "
+      ]
+    ],
+    [
+      [
+        "why you feel you are the right person for this Job",
+        "What do you think you can do for us that other candidates can",
+        "Why Should we Hire You"
+      ],
+      [
+        "i am a hard worker and smart and very good with people "
+      ]
+    ],
+    [
+      [
+        "What do you understand by privacy"
+      ],
+      [
+        "it is important to keep important information to yourself and not polite to share details of other peoples matters "
+      ]
+    ],
+    [
+      [
+        "If you were an animal, which one would you want to be"
+      ],
+      [
+        "i would want to be a snow leopard because they are the top of the food chain and are majestic "
+      ]
+    ],
+    [
+      [
+        "Okay?",
+        "Okay ?"
+      ],
+      [
+        "okay",
+        "ok"
+      ]
+    ],
+    [
+      [
+        "no_match_but_must_reply_with_keyword"
+      ],
+      [
+        ""
       ]
     ]
   ],
