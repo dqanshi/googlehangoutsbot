@@ -549,6 +549,7 @@ class HangupsBot(object):
 
         self._conv_list.on_event.add_observer(self._on_event)
         self._client.on_state_update.add_observer(self._on_status_changes)
+        self.load_user_self_into_self_config()
 
         logger.info("bot initialised")
 
@@ -857,6 +858,33 @@ class HangupsBot(object):
         if User.emails and User.emails[0]: myself["email"] = User.emails[0]
 
         return myself
+
+    def generate_age_from_numerical_string(self, chat_id):
+        """ Deterministically compute a double digit age based on chat_id
+        This way, if chat is disconnected and reconnected, age will be the same
+        for the same user.
+        """
+        old_var = 0
+        for indx, digit in enumerate(chat_id):
+            new_var = digit
+            double_digit_number = int(str(old_var) + str(new_var))
+            old_var = digit
+
+            if 41 < double_digit_number < 64:
+                return double_digit_number
+            elif indx == len(chat_id)-1:
+                return 54
+
+    def load_user_self_into_self_config(self):
+        """Get bots' human name from gmail and create age from chat_id
+        in order to create custom response to 'Introduce yourself' prompt
+        """
+        name = self.user_self()['full_name']
+        age = self.generate_age_from_numerical_string(self.user_self()['chat_id'])
+        
+        for x,y in self.config.config['autoreplies']:
+            if "introduce yourself" in x:
+                y[0] = "My name is {}. I am a {} year old woman. ".format(name, age)
 
 def configure_logging(args):
     """Configure Logging
