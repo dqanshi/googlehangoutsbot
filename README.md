@@ -4,6 +4,15 @@ The main program's code base should be in one directory. \n
 The configuration files (config.json and cookie.json) should be in a different directory:
 * `/Users/_usernamehere_/Library/Application Support/hangupsbot`
 
+### To update the bot to the most recent version and script:
+1. `cd /your-path-to-program/hangoutsbot/hangupsbot`
+2. `git pull`
+3. Either use apple's Finder window to drag and copy the contents of configupdated.py to
+  /Users/{user_name}/Library/Application Support/hangupsbot/config.json or stay in
+  proper directory and type the command:
+  `cp configupdated.json /Users/{user_name}/Library/Application\ Support/hangupsbot/config.json`
+* Now your script and program should be up-to-date
+
 ### Process to run the bot program:
 1. `cd /your/path/to/program`
 2. `source hangoutsbot-venv/bin/activate`
