@@ -8,7 +8,10 @@
     [
       [
         "hi",
-        "hello"
+        "hello",
+        "good morning",
+        "good afternoon",
+        "good evening"
       ],
       [
       "hi there",
@@ -48,7 +51,10 @@
         "Let me know if you are interested so we can proceed",
         "Are you ready to know your stand",
         "I believe you are",
-        "shall we get started"
+        "shall we get started",
+        "I believe you can handle",
+        "Are you proficient",
+        "Are you ready for the Company's decision"
       ],
       [
         "yes",
@@ -101,7 +107,9 @@
     ],
     [
       [
-        "have you been in the military"
+        "have you been in the military",
+        "a military background",
+        "military status?"
       ],
       [
         "no i have not been in military "
@@ -111,7 +119,8 @@
       [
         "Are you currently employed",
         "do you currently have a job",
-        "do you have a job"
+        "do you have a job",
+        "your current employment status"
       ],
       [
         "i am unemployed right now "
@@ -119,10 +128,21 @@
     ],
     [
       [
-        "Do you have an idea on how to use MS excel"
+        "Do you have an idea on how to use MS excel",
+        "do you know how to use ms excel",
+        "do you have experience using ms excel",
+        "do you have experience with ms excel"
       ],
       [
         "yes I used excel before "
+      ]
+    ],
+    [
+      [
+        "have any online interview experience"
+      ],
+      [
+        "yes i have done some online interviews before"
       ]
     ],
     [
@@ -139,7 +159,8 @@
     ],
     [
       [
-        "what is your clerical speed"
+        "what is your clerical speed",
+        "your typing speed"
       ],
       [
         "42 "
@@ -173,7 +194,8 @@
       [
         "Do you have a HP laserjet printer",
         "Do you have PC,Photocopier,printer and scanner",
-        "Do you have a computer and a printer"
+        "Do you have a computer and a printer",
+        "do you have a printer"
       ],
       [
         "I have a computer but I do not have a printer. "
@@ -191,7 +213,8 @@
       [
         "Which among the listed positions",
         "positions currently available",
-        "currently available positions"
+        "currently available positions",
+        "which position will you"
       ],
       [
         "i prefer to be a data entry assistant if that can be possible "
@@ -225,7 +248,19 @@
     ],
     [
       [
-        "What is your highest educational"
+        "are you seeking full time",
+        "are you seeking part time",
+        "are you seeking full-time",
+        "are you seeking part-time"
+      ],
+      [
+        "i would prefer part-time",
+        "ideally i will work part time employment"
+      ]
+    ],
+    [
+      [
+        "is your highest educational"
       ],
       [
         "i completed a college business certificate last year "
@@ -235,10 +270,29 @@
       [
         "why you feel you are the right person for this Job",
         "What do you think you can do for us that other candidates can",
-        "Why Should we Hire You"
+        "Why Should we Hire You",
+        "What are your strengths"
       ],
       [
-        "i am a hard worker and smart and very good with people "
+        "i am a hard worker and smart and very good with people ",
+        "I am smart with numbers but have people skills too",
+        "My technology advancement is more than some other people"
+      ]
+    ],
+    [
+      [
+        "You Have to Deal With Conflict in the Office"
+      ],
+      [
+        "I want to work remotely because that will not be the issue now"
+      ]
+    ],
+    [
+      [
+        "How much training do you think"
+      ],
+      [
+        "training will be useful to learn your softwares system but i dont need too much"
       ]
     ],
     [
@@ -247,6 +301,22 @@
       ],
       [
         "it is important to keep important information to yourself and not polite to share details of other peoples matters "
+      ]
+    ],
+    [
+      [
+        "What do you understand by Disbursement and Reimbursements Of Funds"
+      ],
+      [
+        "i understand that funds are disbursed differently for each company and position i will work for"
+      ]
+    ],
+    [
+      [
+        "What do you regard as the biggest challenges and opportunities facing a firm today"
+      ],
+      [
+        "i think technology is very challenging and makes things move too fast for some workers"
       ]
     ],
     [
@@ -285,13 +355,12 @@
       "silentmode": false
     }
   },
-  "link_to_guide": "https://github.com/hangoutsbot/hangoutsbot/wiki/User-Guide",
+  "link_to_guide": " ",
   "mentionall": true,
   "mentionallwhitelist": [],
   "mentionerrors": true,
   "mentionquidproquo": false,
   "plugins": [
-    "botaliases",
     "default",
     "subscribe",
     "autoreply"
