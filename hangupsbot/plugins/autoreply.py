@@ -91,9 +91,11 @@ def _handle_autoreply(bot, event, command):
             bot.keyword_responses[event.conv_id] = {'keyword':phrase, "counter":randint(5, 8)}
 
     ## If text contains parenth with numbers in it, handle differently ##
-    if re.findall('\d+.*?\)', event.text) and not re.findall('\d+\w+', event.text):
+
+    if re.findall('\d+.*?(?:\.|\))', event.text) and not re.findall('\d+\w+', event.text):
         logger.info("Entering Multi-Line answer workflow")
         message = _multi_number_answer(event.text, autoreplies_list)
+        yield from asyncio.sleep(3)
         yield from send_reply(bot, event, message)
 
     elif autoreplies_list:
@@ -108,11 +110,13 @@ def _handle_autoreply(bot, event, command):
                     if _words_in_text(kw, event.text) or kw == "*":
                         logger.info("MATCHED CHAT: {}".format(kw))
                         event.anything_sent = 1
+                        yield from asyncio.sleep(randint(6,15))
                         yield from send_reply(bot, event, message)
                         break
 
                     elif kw == 'no_match_but_must_reply_with_keyword' and (event.conv_id in bot.keyword_responses) and bot.keyword_responses[event.conv_id]["counter"]>0 and event.anything_sent==0:
                         bot.keyword_responses[event.conv_id]["counter"] -= 1
+                        yield from asyncio.sleep(randint(6,15))
                         yield from send_reply(bot, event, message)
                         break
 
@@ -143,7 +147,7 @@ def send_reply(bot, event, message):
     #         pass
 
     envelopes = []
-    yield from asyncio.sleep(randint(3,10))
+
     if (event.conv_id in bot.keyword_responses) and bot.keyword_responses[event.conv_id]["counter"] > 0:
         keyword = bot.keyword_responses[event.conv_id]["keyword"]
         envelopes.append((event.conv, message.format(**values) + '\n ' + keyword))
@@ -217,10 +221,9 @@ def _multi_number_answer(text, replies_list):
     ( 3 ) Have you been in the military before? and Are you currently employed?
     """
 
-    yield from asyncio.sleep(30)
     text = text.replace('\n', ' ').replace('\r', '')
-    number_list = re.findall('\d+.*?\)', text)
-    question_list = re.split('\d+.*?\)', text)
+    number_list = re.findall('\d+.*?(?:\.|\))', text)
+    question_list = re.split('\d+.*?(?:\.|\))', text)
     clean_question_list = [ x.replace('(', '').replace(')', '').lstrip('.').lstrip(',').strip() for x in question_list if x]
     clean_question_list = [x for x in clean_question_list if x]
 
