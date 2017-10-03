@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import appdirs, argparse, asyncio, gettext, logging, logging.config, os, shutil, signal, sys, time
+import appdirs, argparse, asyncio, gettext, logging, logging.config, os, shutil, signal, sys, time, random
 
 import hangups
 
@@ -879,12 +879,24 @@ class HangupsBot(object):
         """Get bots' human name from gmail and create age from chat_id
         in order to create custom response to 'Introduce yourself' prompt
         """
+        states = ["Alaska", "Alabama", "Arkansas", "American Samoa", "Arizona", \
+            "California", "Colorado", "Connecticut", "District of Columbia", "Delaware", \
+            "Florida", "Georgia", "Guam", "Hawaii", "Iowa", "Idaho", "Illinois", "Indiana", \
+            "Kansas", "Kentucky", "Louisiana", "Massachusetts", "Maryland", "Maine", \
+            "Michigan", "Minnesota", "Missouri", "Mississippi", "Montana", "North Carolina", \
+            "North Dakota", "Nebraska", "New Hampshire", "New Jersey", "New Mexico", "Nevada", \
+            "New York", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Puerto Rico", \
+            "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", \
+            "Utah", "Virginia", "Virgin Islands", "Vermont", "Washington", "Wisconsin", \
+            "West Virginia", "Wyoming"]
+
         name = self.user_self()['full_name']
         age = self.generate_age_from_numerical_string(self.user_self()['chat_id'])
-        
+        location = random.choice(states)
+
         for x,y in self.config.config['autoreplies']:
             if "introduce yourself" in x:
-                y[0] = "My name is {}. I am a {} year old woman. ".format(name, age)
+                y[0] = "My name is {}. I am a {} year old woman that lives in {} ".format(name, age, location)
 
 def configure_logging(args):
     """Configure Logging
