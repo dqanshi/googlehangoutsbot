@@ -4,7 +4,12 @@ The main program's code base should be in one directory. \n
 The configuration files (config.json and cookie.json) should be in a different directory:
 * `/Users/_usernamehere_/Library/Application Support/hangupsbot`
 
-### To update the bot to the most recent version and script:
+### Open config.json that the bot actually reads from
+1. `cd ~/Library/Application\ Support/hangupsbot/`
+2. `subl .`
+3. Changes you make to the config.json will be reflected once you save the file then stop/start the bot
+
+### Update the bot from github:
 1. `cd /your-path-to-program/hangoutsbot/hangupsbot`
 2. `git pull`
 3. Either use apple's Finder window to drag and copy the contents of configupdated.py to
@@ -13,7 +18,7 @@ The configuration files (config.json and cookie.json) should be in a different d
   `cp configupdated.json /Users/{user_name}/Library/Application\ Support/hangupsbot/config.json`
 * Now your script and program should be up-to-date
 
-### Process to run the bot program:
+### Run the bot program:
 1. `cd /your/path/to/program`
 2. `source hangoutsbot-venv/bin/activate`
 3. `python3 hangupsbot/hangupsbot.py`
@@ -24,14 +29,14 @@ The configuration files (config.json and cookie.json) should be in a different d
 6. Manually initiate conversations with the people you want to STS
 7. Sit back and let the bot take over
 
-### Process to stop the bot:
+### Stop the bot:
 1. `control + c` will stop the bot from running
 2. type `deactivate` in the same terminal window
 3. (optional) Delete the `cookies.json` file if you want to sign in to a different gmail next time
 
-### If you made changes (such as adding more conversation autoreplies):
+### Pushing changes you made to github (such as if you added more autoreplies):
 1. `git add .`
-2. `git commit -m 'your message here'`
+2. `git commit -m 'type your message here'`
 3. `git push`
 
 
