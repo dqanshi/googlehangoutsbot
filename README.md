@@ -16,7 +16,7 @@ The configuration files (config.json and cookie.json) should be in a different d
 ### Process to run the bot program:
 1. `cd /your/path/to/program`
 2. `source hangoutsbot-venv/bin/activate`
-3. `python hangupsbot/hangupsbot.py`
+3. `python3 hangupsbot/hangupsbot.py`
 4. (optional) type in your gmail username and password
 * Now the bot program is running, so all messages to the Hangouts you signed in with will be handled by the bot
 
