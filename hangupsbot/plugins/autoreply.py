@@ -95,7 +95,7 @@ def _handle_autoreply(bot, event, command):
     if re.findall('\d+.*?(?:\.|\))', event.text) and not re.findall('\d+\w+', event.text):
         logger.info("Entering Multi-Line answer workflow")
         message = _multi_number_answer(event.text, autoreplies_list)
-        yield from asyncio.sleep(3)
+        yield from asyncio.sleep(30)
         yield from send_reply(bot, event, message)
 
     elif autoreplies_list:
