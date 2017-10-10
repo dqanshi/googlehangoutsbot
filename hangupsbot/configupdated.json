@@ -16,7 +16,7 @@
       [
       "hi there",
       "hello there",
-      "heya"
+      "hey"
       ]
     ],
     [
@@ -49,12 +49,25 @@
         "I hope this is very well understood?",
         "your quick response is highly needed okay?",
         "Let me know if you are interested so we can proceed",
-        "Are you ready to know your stand",
-        "I believe you are",
+        "I believe you",
         "shall we get started",
-        "I believe you can handle",
         "Are you proficient",
-        "Are you ready for the Company's decision"
+        "Are you sure",
+        "Can you make",
+        "Do I have your attention",
+        "understood",
+        "Got it?",
+        "right?",
+        "Are you still",
+        "are you interested",
+        "are you there",
+        "You there?",
+        "I believe we",
+        "I hope you are okay",
+        "received the check?",
+        "is fine by you?",
+        "Do you have a Walmart"
+
       ],
       [
         "yes",
@@ -63,10 +76,14 @@
     ],
     [
       [
-        "If you have issue(s) in any of the above, please indicate"
+        "If you have issue(s) in any of the above, please indicate",
+        "Have you ever had an online",
+        "Do you have any question",
+        "Have you ever worked"
       ],
       [
-        "no"
+        "no",
+        "nope"
       ]
     ],
     [
@@ -109,10 +126,11 @@
       [
         "have you been in the military",
         "a military background",
-        "military status?"
+        "military status?",
+        "military experience"
       ],
       [
-        "no i have not been in military "
+        "no i have not been in military"
       ]
     ],
     [
@@ -159,11 +177,12 @@
     ],
     [
       [
-        "what is your clerical speed",
+        "clerical speed",
         "your typing speed"
       ],
       [
-        "42 "
+        "42 wpm",
+        "About 35 WPM"
       ]
     ],
     [
@@ -192,6 +211,15 @@
     ],
     [
       [
+        "How many minutes"
+      ],
+      [
+        "30 minutes or so. ",
+        "About 45 minutes"
+      ]
+    ],
+    [
+      [
         "Do you have a HP laserjet printer",
         "Do you have PC,Photocopier,printer and scanner",
         "Do you have a computer and a printer",
@@ -214,10 +242,18 @@
         "Which among the listed positions",
         "positions currently available",
         "currently available positions",
+        "which position will you",
+        "Which of the available position",
+        "Which among the listed positions",
+        "Which of the above listed positions",
+        "Which of the above positions",
+        "positions currently available",
+        "currently available positions",
         "which position will you"
       ],
       [
-        "i prefer to be a data entry assistant if that can be possible "
+        "i prefer to be a data entry assistant if that can be possible",
+        "I would like to be an administrative assistant"
       ]
     ],
     [
@@ -330,7 +366,22 @@
     [
       [
         "Okay?",
-        "Okay ?"
+        "Okay ?",
+        "OK?",
+        "Proceed now and",
+        "can you head out now",
+        "get back to me to proceed",
+        "I need you to",
+        "let me know once you get there",
+        "You will undergo",
+        "The company will be providing you with the funds",
+        "You are to have it deposited",
+        "That will be all for now",
+        "and you?",
+        "Let me know if",
+        "your swift and timely response",
+        "your swift response",
+        "your timely response"
       ],
       [
         "okay",
