@@ -27,13 +27,8 @@
   "mentionerrors": true,
   "mentionquidproquo": false,
   "plugins": [
-    "botaliases",
     "default",
-    "mentions",
     "subscribe",
-    "autoreply",
-    "dnd",
-    "starter",
-    "remind"
+    "autoreply"
   ]
 }
