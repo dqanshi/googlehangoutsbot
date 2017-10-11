@@ -1032,7 +1032,7 @@ def main():
     # If there is no config file in user data directory, copy default one there
     if not os.path.isfile(args.config):
         try:
-            shutil.copy(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'config.json')),
+            shutil.copy(os.path.abspath(os.path.join(os.path.dirname(sys.argv[0]), 'configupdated.json')),
                         args.config)
         except (OSError, IOError) as e:
             sys.exit(_('Failed to copy default config file: {}').format(e))
