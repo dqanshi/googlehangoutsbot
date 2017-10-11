@@ -4,11 +4,6 @@ The main program's code base should be in one directory. \n
 The configuration files (config.json and cookie.json) should be in a different directory:
 * `/Users/_usernamehere_/Library/Application Support/hangupsbot`
 
-### Open config.json that the bot actually reads from
-1. `cd ~/Library/Application\ Support/hangupsbot/`
-2. `subl .`
-3. Changes you make to the config.json will be reflected once you save the file then stop/start the bot
-
 ### Update the bot from github:
 1. `cd /your-path-to-program/hangoutsbot/hangupsbot`
 2. `git pull`
@@ -21,13 +16,16 @@ The configuration files (config.json and cookie.json) should be in a different d
 ### Run the bot program:
 1. `cd /your/path/to/program`
 2. `source hangoutsbot-venv/bin/activate`
-3. `python3 hangupsbot/hangupsbot.py`
-4. (optional) type in your gmail username and password
+3. `subl .` to open the entire directoy in sublime
+4. You'll now see that there is a directory called `local_memory` that holds that activate `config.json` file
+  Changes you make to the `config.json` will be reflected once you save the file then stop/start the bot just like before
+5. `python3 hangupsbot/hangupsbot.py`
+6. (optional) type in your gmail username and password
 * Now the bot program is running, so all messages to the Hangouts you signed in with will be handled by the bot
 
-5. Sign into that same account in a web browser
-6. Manually initiate conversations with the people you want to STS
-7. Sit back and let the bot take over
+7. Sign into that same account in a web browser
+8. Manually initiate conversations with the people you want to STS
+9. Sit back and let the bot take over
 
 ### Stop the bot:
 1. `control + c` will stop the bot from running
@@ -43,9 +41,10 @@ The configuration files (config.json and cookie.json) should be in a different d
 ### Running for the first time:
 1. `python3 --version` should be over Python 3.5
 2. `pip3 --version` should be greater than  9.0
-3. `virtualenv hangoutsbot-venv` to create a virtual environment
-4. `pip3 install -r requirements.txt` in order to install all dependencies
-5. `python3 hangupsbot/hangupsbot.py` and see if it works
+3. `cd /your-path-to-program/hangoutsbot/hangupsbot`
+4. `virtualenv hangoutsbot-venv` to create a virtual environment
+5. `pip3 install -r requirements.txt` in order to install all dependencies
+6. `python3 hangupsbot/hangupsbot.py` and see if it works
 
 
 # Introduction
