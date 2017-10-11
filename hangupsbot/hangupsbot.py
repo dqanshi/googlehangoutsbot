@@ -991,11 +991,13 @@ def configure_logging(args):
 def main():
     """Main entry point"""
     # Build default paths for files.
-    dirs = appdirs.AppDirs('hangupsbot', 'hangupsbot')
-    default_log_path = os.path.join(dirs.user_data_dir, 'hangupsbot.log')
-    default_cookies_path = os.path.join(dirs.user_data_dir, 'cookies.json')
-    default_config_path = os.path.join(dirs.user_data_dir, 'config.json')
-    default_memory_path = os.path.join(dirs.user_data_dir, 'memory.json')
+    # dirs = appdirs.AppDirs('hangupsbot', 'hangupsbot')
+    dirs = os.getcwd() + '/local_memory'
+    # Remove dirs.user_data_dir from join
+    default_log_path = os.path.join(dirs, 'hangupsbot.log')
+    default_cookies_path = os.path.join(dirs, 'cookies.json')
+    default_config_path = os.path.join(dirs, 'config.json')
+    default_memory_path = os.path.join(dirs, 'memory.json')
 
     # Configure argument parser
     parser = argparse.ArgumentParser(prog='hangupsbot',

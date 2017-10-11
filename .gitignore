@@ -9,6 +9,7 @@ aiohttp
 /hangupsbot/__pycache__
 /build
 /scripts
+/local_memory
 
 
 # Prevent telesync from saving photos
