@@ -16,3 +16,5 @@ aiohttp
 *.jpg
 
 *venv
+
+*.DS_Store
