@@ -31,7 +31,8 @@
     [
       [
         "introduce yourself",
-        "tell me about yourself"
+        "tell me about yourself",
+        "name and location"
       ],
       [
         "My name is Cheryl Carol. I am 52 and I live in Pennsylvania. And I am a female woman"
@@ -48,7 +49,7 @@
         "are you ready",
         "are we still",
         "I hope this is very well understood?",
-        "your quick response is highly needed okay?",
+        "your quick response",
         "Let me know if you are interested so we can proceed",
         "I believe you",
         "shall we get started",
@@ -68,9 +69,27 @@
         "received the check?",
         "is fine by you?",
         "Do you have a Walmart",
+        "Do you have Walmart",
         "Done reading?",
         "Done reading ?",
-        "be able to devote 8 hours"
+        "be able to devote 8 hours",
+        "are we connected",
+        "Is now a good time",
+        "if trained towards it",
+        "that is okay with you",
+        "hope you are ready",
+        "Will you be able to devote",
+        "can we proceed",
+        "Are you set to commence",
+        "you can handle all of these duties",
+        "Can we proceed",
+        "I do believe you are",
+        "Are you done",
+        "Are you interested",
+        "Will you be able to devote",
+        "interview and job briefing",
+        "with the above software programs",
+        "Am i clear"
       ],
       [
         "yes",
@@ -95,6 +114,14 @@
       ],
       [
         "$20"
+      ]
+    ],
+    [
+      [
+        "you will enjoy every moment working with us"
+      ],
+      [
+        "Thank you! This is a great company and I'm so grateful to be a part of it."
       ]
     ],
     [
@@ -228,7 +255,8 @@
     ],
     [
       [
-        "you ever worked from home"
+        "you ever worked from home",
+        "ever had any experience working from home"
       ],
       [
         "no but I want to work from home "
@@ -240,7 +268,8 @@
       ],
       [
         "30 minutes or so. ",
-        "About 45 minutes "
+        "About 45 minutes ",
+        "20 to 30 minutes"
       ]
     ],
     [
@@ -287,7 +316,8 @@
     ],
     [
       [
-        "How would you like to be Paid"
+        "How would you like to be Paid",
+        "Check or via Direct Deposit"
       ],
       [
         "every 2 weeks by direct deposit if possible "
@@ -295,7 +325,9 @@
     ],
     [
       [
-        "What Bank Do you"
+        "What Bank Do you",
+        "name of your present bank",
+        "so as to see if it tallies financially"
       ],
       [
         "I've been with WellsFargo for many years ",
@@ -355,12 +387,15 @@
         "I want to work remotely because that will not be the issue now "
       ]
     ],
+    
     [
       [
-        "How much training do you think"
+        "Congratulations",
+        "you've just been confirmed qualified",
+        "The good news is"
       ],
       [
-        "training will be useful to learn your softwares system but i dont need too much "
+        "Thank you! I'm so excited about this opportunity."
       ]
     ],
     [
@@ -414,9 +449,13 @@
         "That will be all for now",
         "and you?",
         "Let me know if",
+        "Let me know once",
         "your swift and timely response",
         "your swift response",
-        "your timely response"
+        "your timely response",
+        "once you're done reading",
+        "you can ask questions when",
+        "As we proceed you will get to know more and understand better"
       ],
       [
         "okay ",
