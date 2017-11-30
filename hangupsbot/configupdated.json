@@ -16,30 +16,59 @@
       [
       "hi there",
       "hello there",
-      "hey"
+      "hey",
+      "hi",
+      "hello!"
       ]
     ],
     [
       [
         "how are you",
-        "how are you doing",
-        "hope you are doing great today",
-        "hope you are doing good today"
+        "how is your day going",
+        "how was your night",
       ],
       [
-        "I am fine, and you?",
+        "good, and you?",
         "i am doing good. how are you?"
       ]
     ],
     [
       [
-        "How was your night",
-        "how was your day",
-        "how was your morning"
+        "establish good relationships"
       ],
       [
-        "good, how was yours? ",
-        "fine. how was yours ? "
+        "I'm very freidnly in nature, so it's easy for me to make good relationships",
+        "i always like to smile, so people always want to be my friend"
+      ]
+    ],
+    [
+      [
+        "had a blessed night rest"
+      ],
+      [
+        "So very blessed! I slept like an angle",
+        "That's kindly of you. I slept good. How was your nights rest?"
+      ]
+    ],
+    [
+      [
+        "We have three working sections",
+        "What time range"
+      ],
+      [
+        "I prefer to work evenings",
+        "I can do a full day",
+        "I'd like to work some mornings and some evenings, is that possible?"
+      ]
+    ],
+    [
+      [
+        "job benefits include",
+      ],
+      [
+        "Wow! Those are great benefits! I'm so excited to work for you! I haven't been to the doctor in a while.",
+        "I'm very happy to hear the company has such good benefits",
+        "Are there are any more benefits or perks?"
       ]
     ],
     [
@@ -47,11 +76,11 @@
         "introduce yourself",
         "tell me about yourself",
         "name and location",
-        "full name and location",
-        "your full name,location",
-        "your name,location",
-        "your full name, location",
-        "your name, location"
+        "full name,location",
+        "What is your full name,and current location",
+        "full name age",
+        "where are you located"
+        "what are your full names"
       ],
       [
         "My name is Cheryl Carol. I am 52 and I live in Pennsylvania. And I am a female woman"
@@ -64,17 +93,14 @@
         "you have no issue",
         "you have no issues",
         "will not be a problem for you",
-        "wont be a problem for you",
-        "won't be a problem for you",
         "Can you handle",
+        "are you ready",
         "are we still",
         "I hope this is very well understood?",
         "your quick response",
         "Let me know if you are interested so we can proceed",
-        "let me know so we can proceed",
         "I believe you",
         "shall we get started",
-        "shall we get it started",
         "Are you proficient",
         "Are you sure",
         "Can you make",
@@ -87,8 +113,6 @@
         "are you there",
         "You there?",
         "I believe we",
-        "i believe the company can",
-        "i believe I can count on you",
         "I hope you are okay",
         "received the check?",
         "is fine by you?",
@@ -96,6 +120,7 @@
         "Do you have Walmart",
         "Done reading?",
         "Done reading ?",
+        "be able to devote 8 hours",
         "are we connected",
         "Is now a good time",
         "if trained towards it",
@@ -105,7 +130,7 @@
         "can we proceed",
         "Are you set to commence",
         "you can handle all of these duties",
-        "Can we now proceed",
+        "Can we proceed",
         "I do believe you are",
         "Are you done",
         "Are you interested",
@@ -113,82 +138,34 @@
         "interview and job briefing",
         "with the above software programs",
         "Am i clear",
-        "I believe this is fine",
-        "I believe this is ok",
-        "count on your devotion",
-        "set for your update",
-        "hope you possess the above",
-        "can we go on",
-        "can we move on",
-        "ready to move on",
-        "are you with me",
-        "ready for today’s update",
-        "ready for todays update",
-        "ready for your update",
-        "correct?",
-        "still with me",
+        "...clear?",
+        "Have you had experience making decisions under pressure?",
+        "May we proceed",
+        "Are you aware that this is an online"
+        "this is strictly online",
         "are you available",
-        "do you have any clerical",
-        "have you ever deposited a check through",
-        "can handle the company's funds",
-        "can handle the companys funds",
-        "can handle the company funds",
-        "able to devote 3 hours",
-        "able to devote 5 hours",
-        "able to devote 6 hours",
-        "able to devote 7 hours",
-        "able to devote 8 hours"
+        "are you with me",
+        "ready for your interview",
+        "can you work"
       ],
       [
-        "yes ",
-        "Yes. ",
-        "yeah ",
-        "Yes "
-      ]
-    ],
-    [
-      [
-        "are you ready",
-        "you are ready for your interview",
-        "are you ready for your interview"
-      ],
-      [
-      "Yes, I’m ready ",
-      "Yep. I am ready "
+        "yes",
+        "Yes"
       ]
     ],
     [
       [
         "If you have issue(s) in any of the above, please indicate",
         "Have you ever had an online",
-        "you have any question",
-        "you have any questions",
+        "Do you have any question",
         "Have you ever worked",
-        "Can you do a mobile deposit",
-        "have no problem with that",
-        "are you busy",
-        "Will you have any problem",
-        "Will you have a problem",
-        "Do you have a criminal record"
+        "Have you been interviewed online",
+        "Do you have a check printing experience",
+        "Do you have a credit card"
       ],
       [
-        "no ",
-        "No ",
-        "no. ",
-        "nope "
-      ]
-    ],
-    [
-      [
-        "goodbye",
-        "good bye",
-        "bye"
-      ],
-      [
-        "good bye ",
-        "Bye ",
-        "Bye. ",
-        "bye "
+        "no",
+        "nope"
       ]
     ],
     [
@@ -201,11 +178,23 @@
     ],
     [
       [
-        "What salary range are you"
+        "When would you be available to start",
+        "when can you start",
+        "when are you available"
       ],
       [
-        "I think around 40000 annually",
-        "I seek the equivalent to full time of 50k, given the benefits of course"
+        "I can start today",
+        "I'm ready now"
+      ]
+    ],
+    [
+      [
+        "why do you want this Job",
+        "Why have you applied for this position"
+      ],
+      [
+        "The job sounds very interesting and I've been looking for a job for a while now,"
+        "It sounds like the perfect job for me. I like to work from home"
       ]
     ],
     [
@@ -220,26 +209,11 @@
       [
         "What type of jobs have you had",
         "What types of jobs have you had",
-        "Briefly describe your work experience, especially the administrative and customer service aspects?",
-        "What applicable attributes /experience do you have"
+        "Briefly describe your work experience, especially the administrative and customer service aspects?"
       ],
       [
         "In the past I have been a secretary for a business office and personal assistant to manager of warehouse facility ",
-        "I have been a computer operator for a retail facility and for a staffing agency "
-      ]
-    ],
-    [
-      [
-        "What first drew you to work as a customer service",
-        "What is your approach to customer service",
-        "Describe an experience where you received positive (or negative) feedback from a customer",
-        "Describe an experience you had that required you to really empathize with a customer’s situation",
-        "Can you explain how you contact or initiate communications with customers"
-      ],
-      [
-        "I haven't done any customer service before so unfortunately don't know ",
-        "i am not sure because did not ever be a customer servicer ",
-        "my past experience did not have any customer service experiences "
+        "I have been a customer service telephone operator for a retail facility and for a staffing agency "
       ]
     ],
     [
@@ -259,6 +233,34 @@
       ],
       [
         "I was responsible for scheduling and communicatons and other clerical duties "
+      ]
+    ],
+    [
+      [
+        "Are you a US. Citizen"
+      ],
+      [
+        "Yes, I'm a citizen."
+      ]
+    ],
+    [
+      [
+        "Are you clean from felony",
+        "Are you clean from hard drugs",
+        "criminal record"
+      ],
+      [
+        "I have no criminal or drug history."
+      ]
+    ],
+    [
+      [
+        "how do you want your name",
+        "How will you want your names to appear"
+      ],
+      [
+        "My first and last name is fine thanks. You know my first and last name right?",
+        "Just my first and last name is fine, thanks!"
       ]
     ],
     [
@@ -298,20 +300,6 @@
     ],
     [
       [
-        "you familiar with the above software",
-        "you familiar with the above softwares",
-        "you familiar with the above software's",
-        "you familiar with this software's",
-        "you familiar with this softwares",
-        "you familiar with this software"
-      ],
-      [
-        "I am familiar with some of them ",
-        "i have used some of them before"
-      ]
-    ],
-    [
-      [
         "Describe your computer experience including applications used"
       ],
       [
@@ -321,37 +309,19 @@
     ],
     [
       [
-        "How much training do you think"
+        "Please brag to us about a client relationship that you have"
       ],
       [
-        "training will be useful to learn your systems but i dont need too much "
-      ]
-    ],
-    [
-      [
-        "Please brag to us about a client relationship that you have",
-        "how do you establish good relationships"
-      ],
-      [
-        "It is important to have a good relationship with every customer of the business. When I was a phone specialist I treated everyone I talked to like they were very important ",
+        "It is important to have a good relationship with every customer of the business. When I was a customer service specialist I treated every customer like they were very important ",
         "I consider my boss my client, and I am very hard-working and loyal "
       ]
     ],
     [
       [
-        "have any online interview experience",
-        "Have you been interviewed Online",
-        "Have you been interviewed Online",
-        "Have you ever interviewed Online",
-        "Have you ever had an online interview",
-        "Have you ever done an online interview",
-        "Have you done an online interview",
-        "new interview conducting method"
+        "have any online interview experience"
       ],
       [
-        "No i have never had an online interviews before ",
-        "No my interviews are always in person ",
-        "The online is new to me. I usually go in person or on the phone "
+        "yes i have done some online interviews before "
       ]
     ],
     [
@@ -369,7 +339,8 @@
     [
       [
         "clerical speed",
-        "your typing speed"
+        "your typing speed",
+        "words per minute"
       ],
       [
         "42 wpm ",
@@ -386,30 +357,35 @@
     ],
     [
       [
-        "How many hours do you intend to dedicate to this job"
+        "How many hours do you intend to dedicate to this job",
+        "How many hours are you willing"
       ],
       [
-        "7 hours a day "
+        "7 hours a day"
       ]
     ],
     [
       [
-        "you ever worked from home",
-        "had any experience working from home"
+        "ever worked from home",
+        "ever had any experience working from home",
+        "ever worked online before"
       ],
       [
-        "no but I want to work from home "
+        "no but I want to work from home",
+        "No, but I'm excited to work from home, because it will be convenient for me."
       ]
     ],
     [
       [
-        "How many minutes"
+        "How many minutes",
+        "How long will it take",
+        "how many minute"
       ],
       [
         "30 minutes or so. ",
-        "maybe a half hour? ",
-        "20 to 30 minutes ",
-        "I would say almost an hour "
+        "About 45 minutes ",
+        "20 to 30 minutes",
+        "It will take me 40 minutes"
       ]
     ],
     [
@@ -418,10 +394,6 @@
         "Do you have PC,Photocopier,printer and scanner",
         "Do you have a computer and a printer",
         "do you have a printer",
-        "do you have printer",
-        "do you have a working printer",
-        "do you have working printer",
-        "Do you have access to a printer",
         "Do you have a Printer, Fax Machine,Scanner and a Photocopier? "
       ],
       [
@@ -431,12 +403,19 @@
     ],
     [
       [
-        "Are you seeking employment in a company of a certain size",
-        "What was the size of your team"
+        "Are you seeking employment in a company of a certain size"
       ],
       [
-        "I have worked in big and small teams, but any size company is fine ",
-        "My experience is with medium sized companies but I dont care "
+        "any size company is fine"
+      ]
+    ],
+    [
+      [
+        "What is your greatest achievement so far?"
+      ],
+      [
+        "I was employee of the month once",
+        "My greatest achievement is yet to come. I hope to achive great things at your company"
       ]
     ],
     [
@@ -445,74 +424,67 @@
         "positions currently available",
         "currently available positions",
         "which position will you",
-        "which of the position",
-        "which of the positions",
         "Which of the available position",
         "Which among the listed positions",
         "Which of the above listed positions",
         "Which of the above listed position",
         "Which of the above positions",
         "Which of the above position",
-        "which of the listed position",
-        "which of the listed positions",
         "positions currently available",
         "currently available positions",
         "which position will you",
-        "Which preferred position will be most",
-        "listed positions do you think",
-        "Among these listed positions"
+        "the positions available are",
+        "Which one can you be able to handle effectively",
+        "Which of the positions"
       ],
       [
-        "i prefer to be a full time data entry assistant if that can be possible ",
-        "I would like to be a full time administrative assistant if I can work from home ",
-        "I will be best suited to be a assistant if I can work full time and from home "
+        "i prefer to be a data entry assistant if that can be possible ",
+        "I would like to be an administrative assistant ",
+        "I can do any position, but I like data entry!"
       ]
     ],
     [
       [
         "How would you like to be Paid",
         "Check or via Direct Deposit",
-        "How will You like to be paid",
-        "what means of payment",
-        "which means of payment"
+        "payroll interval",
+        "payroll method"
       ],
       [
-        "every 2 weeks by check if possible ",
-        "i prefer a check every week "
+        "every 2 weeks by direct deposit if possible "
+      ]
+    ],
+    [
+      [
+        "weaknesses"
+      ],
+      [
+        "I don't really have any weakness",
+        "My weakness is that I'm not always so good with computers"
+      ]
+    ],
+    [
+      [
+        "Tell me about your last position"
+      ],
+      [
+        "I worked as an administrative assistant. It was a good job. I liked my boss a lot",
+        "I was not very happy in my last job, so now I want to work from home. I didnt like anything about it really."
       ]
     ],
     [
       [
         "What Bank Do you",
         "name of your present bank",
-        "What financial institution do you",
-        "which bank do you",
-        "name of the bank you"
+        "so as to see if it tallies financially",
+        "banking organization to ensure",
+        "to see if it tallies with",
+        "what is the name of the bank",
+        "what is the name of bank"
       ],
       [
         "I've been with WellsFargo for many years ",
-        "my bank is Chase because they have always been my bank ",
-        "I have always had a bank account with Bank of America "
-      ]
-    ],
-    [
-      [
-        "How much is your daily online deposit limit",
-        "How much is your online deposit limit",
-        "How much is your daily deposit limit",
-        "How much is your deposit limit"
-      ],
-      [
-        "My limit is $2000 a day ",
-        "i have a $2000 deposit limit"
-      ]
-    ],
-    [
-      [
-        "available for withdraw"
-      ],
-      [
-        "all of it is available "
+        "my bank is Chase because they have always been my bank"
       ]
     ],
     [
@@ -521,21 +493,10 @@
         "How long do you expect to remain employed with",
         "How long would you expect to remain employed with",
         "How long do you expect to work for",
-        "How long would you expect to work for",
-        "you have any long-term aspirations",
-        "Where do you see yourself in"
+        "How long would you expect to work for"
       ],
       [
-        "hopefully I will work for you from home for long time ",
-        "i would like to work here for a long time so I can work from home "
-      ]
-    ],
-    [
-      [
-        "Which deposit method are you familiar"
-      ],
-      [
-        "i have used both methods"
+        "hopefully for long time "
       ]
     ],
     [
@@ -543,9 +504,7 @@
         "are you seeking full time",
         "are you seeking part time",
         "are you seeking full-time",
-        "are you seeking part-time",
-        "part time or full time job",
-        "part-time or full-time job"
+        "are you seeking part-time"
       ],
       [
         "i would prefer part-time ",
@@ -562,15 +521,22 @@
     ],
     [
       [
+        "stay blessed"
+      ],
+      [
+        "Thank you! I hope you stay blessed as well!",
+        "Have a wonderful night! Be blessed!",
+        "May the lord bless you!"
+      ]
+    ],
+    [
+      [
         "why you feel you are the right person for this Job",
         "What do you think you can do for us that other candidates can",
         "Why Should we Hire You",
         "What are your strengths",
-        "What are your greatest strengths",
-        "Why do you think We should employ you",
-        "Why should we choose you",
-        "Why should we go with you",
-        "How do You think you can help this company"
+        "why you feel you are the right person",
+        "why do you think we should employ you"
       ],
       [
         "i am a hard worker and smart and very good with people ",
@@ -580,50 +546,7 @@
     ],
     [
       [
-        "why do you want to work for this company",
-        "Why have you applied"
-      ],
-      [
-        "I would love the chance to work from home ",
-        "I want to be able to work from my home ",
-        "home working will be greatly considered for me "
-      ]
-    ],
-    [
-      [
-        "how much can this company depend on you"
-      ],
-      [
-        "you can depend on me 100%"
-      ]
-    ],
-    [
-      [
-        "what were your most significant accomplishments",
-        "What are you most proud of"
-      ],
-      [
-        "I have been employee of the month before ",
-        "I am always on time and a very hard worker. My bosses are always happy with how fast I am ",
-        "I am very loyal to my bosses and always please them with my hard work "
-      ]
-    ],
-    [
-      [
-        "how hard working"
-      ],
-      [
-        "I am a very hard worker ",
-        "Very hard working "
-      ]
-    ],
-    [
-      [
-        "You Have to Deal With Conflict in the Office",
-        "how did you handle a issue with a co-worker",
-        "how did you handle an issue with a co-worker",
-        "how did you handle a issue with a coworker",
-        "how did you handle an issue with a coworker"
+        "You Have to Deal With Conflict in the Office"
       ],
       [
         "I want to work remotely because that will not be the issue now "
@@ -631,41 +554,28 @@
     ],
     [
       [
-        "how soon can you begin",
-        "when can you start"
+        "Where do you see yourself"
       ],
       [
-        "I can start immediately ",
-        "as soon as possible ",
-        "I start work on the next Monday"
+        "I see myself being very succesful at your wonderufl company."
       ]
     ],
     [
       [
-        "alone or with a Team",
-        "work on your own or as part of a team"
+        "what you will be using the Company Check"
       ],
       [
-        "I prefer to work alone from home ",
-        "i am a loyal team member but want to work from home "
+        "The check is to pay the certified vendor so I can buy what I need for the training."
       ]
     ],
     [
       [
         "Congratulations",
-        "CONGRATULATION",
         "you've just been confirmed qualified",
-        "you've just been confirmed as qualified",
-        "The good news is",
-        "Congratulations the company has decided to give you",
-        "you've just been confirmed qualified",
-        "you will enjoy every moment working with us"
+        "The good news is"
       ],
       [
-        "Thank you! I'm so excited about this opportunity. ",
-        "I look forward to being a great helper! ",
-        "I can't wait to contribute and make some money ",
-        "woo how great. "
+        "Thank you! I'm so excited about this opportunity."
       ]
     ],
     [
@@ -675,45 +585,7 @@
       ],
       [
         "I have worked with customer data where I learned it is important to keep important information to yourself and not polite to share details of other peoples matters ",
-        "Entering customer and client data teaches you to be careful with the information and respect privacy ",
-        "Privacy of conduct is how you should behave according to rules "
-      ]
-    ],
-    [
-      [
-        "What do you understand by the terms"
-      ],
-      [
-        "the terms are important to follow because that is what the rules are ",
-        "those terms are the rules to follow after "
-      ]
-    ],
-    [
-      [
-        "the toughest experience You have"
-      ],
-      [
-        "I think that the hardest thing is I have done is telling my boss “No” because what he was doing is wrong and against the law"
-      ]
-    ],
-    [
-      [
-        "If you had to turn down a request from a valued client",
-        "If you had to turn down a request from a client",
-        "If you had to turn down a request from a valued customer",
-        "If you had to turn down a request from a customer"
-      ],
-      [
-        "the easiest way would be to be direct with them and explain that is something I cannot do ",
-        "I would tell them they are valued but that I can't help them with that one thing "
-      ]
-    ],
-    [
-      [
-        "What does a company owe its employees"
-      ],
-      [
-        "it is important for the leaders of a company to treat the employees fairly and help them career advancements"
+        "Entering customer and client data teaches you to be careful with the information and respect privacy "
       ]
     ],
     [
@@ -750,6 +622,7 @@
         "can you head out now",
         "get back to me to proceed",
         "I need you to",
+        "let me know once you get there",
         "You will undergo",
         "The company will be providing you with the funds",
         "You are to have it deposited",
@@ -757,74 +630,17 @@
         "and you?",
         "Let me know if",
         "Let me know once",
-        "Let me know when",
         "your swift and timely response",
         "your swift response",
         "your timely response",
         "once you're done reading",
         "you can ask questions when",
-        "As we proceed you will get to know more and understand better",
-        "The result for the interview is on my desk",
-        "I have Positive news for you",
-        "look at our company website",
-        "You will be receiving a check",
-        "can proceed",
-        "...okay",
-        "I need your quick respond",
-        "I need your quick response",
-        "I need your respond",
-        "I need your response"
+        "As we proceed you will get to know more and understand better"
       ],
       [
         "okay ",
         "ok ",
         "OK "
-      ]
-    ],
-    [
-      [
-        "may I have your most preferred email address"
-      ],
-      [
-        "this current email is the best way to reach me"
-      ]
-    ],
-    [
-      [
-        "benefits package"
-      ],
-      [
-        "i am excited to hear all of the perks! ",
-        "benefits are great! "
-      ]
-    ],
-    [
-      [
-        "kindly confirm receipt of the email"
-      ],
-      [
-        "I have now received it"
-      ]
-    ],
-    [
-      [
-        "Can you tell me what to do once you receive the check",
-        "kindly explain all I stated above"
-      ],
-      [
-        "I am to get the check and deposit it into an ATM. Then take the funds and purchase my softwares' from your trusted vendor only ",
-        "Yes, I’m going to deposit it and I’ll use the money to pay the vendor for my supplies"
-      ]
-    ],
-    [
-      [
-        "professional references",
-        "have a work reference"
-      ],
-      [
-        "Yes I will contact my former bosses and then give you their phone numbers ",
-        "I will send a full email with thier informations and they will have good things to say ",
-        "I have their contacts somewhere... can I email you in a later moment? "
       ]
     ],
     [
