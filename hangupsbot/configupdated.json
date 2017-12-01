@@ -14,18 +14,18 @@
         "good evening"
       ],
       [
-      "hi there",
-      "hello there",
-      "hey",
-      "hi",
-      "hello!"
+        "hi there",
+        "hello there",
+        "hey",
+        "hi",
+        "hello!"
       ]
     ],
     [
       [
         "how are you",
         "how is your day going",
-        "how was your night",
+        "how was your night"
       ],
       [
         "good, and you?",
@@ -63,7 +63,7 @@
     ],
     [
       [
-        "job benefits include",
+        "job benefits include"
       ],
       [
         "Wow! Those are great benefits! I'm so excited to work for you! I haven't been to the doctor in a while.",
@@ -79,7 +79,7 @@
         "full name,location",
         "What is your full name,and current location",
         "full name age",
-        "where are you located"
+        "where are you located",
         "what are your full names"
       ],
       [
@@ -141,7 +141,7 @@
         "...clear?",
         "Have you had experience making decisions under pressure?",
         "May we proceed",
-        "Are you aware that this is an online"
+        "Are you aware that this is an online",
         "this is strictly online",
         "are you available",
         "are you with me",
@@ -193,7 +193,7 @@
         "Why have you applied for this position"
       ],
       [
-        "The job sounds very interesting and I've been looking for a job for a while now,"
+        "The job sounds very interesting and I've been looking for a job for a while now",
         "It sounds like the perfect job for me. I like to work from home"
       ]
     ],
@@ -394,10 +394,10 @@
         "Do you have PC,Photocopier,printer and scanner",
         "Do you have a computer and a printer",
         "do you have a printer",
-        "Do you have a Printer, Fax Machine,Scanner and a Photocopier? "
+        "Do you have a Printer, Fax Machine,Scanner and a Photocopier?"
       ],
       [
-        "I have a computer but I do not have a printer or scanner/fax. ",
+        "I have a computer but I do not have a printer or scanner/fax",
         "I have a computer but not yet have a printer "
       ]
     ],
@@ -584,7 +584,7 @@
         "involved working with sensitive or confidential"
       ],
       [
-        "I have worked with customer data where I learned it is important to keep important information to yourself and not polite to share details of other peoples matters ",
+        "I have worked with customer data where I learned it is important to keep important information to yourself and not polite to share details of other peoples matters",
         "Entering customer and client data teaches you to be careful with the information and respect privacy "
       ]
     ],
